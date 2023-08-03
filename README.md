@@ -1,5 +1,5 @@
 # YouTubeWatchHistoryCount
-short script that shows how many times you watched a particular video
+short script that shows your most played videos or music
 
 HOW TO RUN
 1. export youtube and youtube music data in json https://takeout.google.com/settings/takeout
