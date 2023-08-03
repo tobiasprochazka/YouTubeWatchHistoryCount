@@ -9,9 +9,10 @@ music = True
 for entry in data:
     if "subtitles" in entry:
 
-        #FOR ALL YOUTUBE VIDS entry["header"] == "YouTube" 
-        if ((entry["header"] == "YouTube Music") == music) and (entry["title"] != "Zhlédnutí videa, které bylo odstraněno") and ("https://www.youtube.com/watch?v=" not in entry["title"]) and (entry["title"] != "Watched a video that has been removed"):
-        #ENG VERSION (entry["title"] != "Visited YouTube Music")
+        #FOR ALL YOUTUBE VIDS entry["header"] == "YouTube" for music "YouTube Music" 
+        if ((entry["header"] == "YouTube Music") == music) and (entry["title"] != "Visited YouTube Music") and ("https://www.youtube.com/watch?v=" not in entry["title"]) and (entry["title"] != "Zhlédnutí videa, které bylo odstraněno"):
+        #ENG VERSION "Watched a video that has been removed" instead of "Zhlédnutí videa, které bylo odstraněno"
+
             title = entry["title"][8::] 
 
             if music:
